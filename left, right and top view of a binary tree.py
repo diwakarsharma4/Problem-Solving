@@ -43,15 +43,14 @@ def left_view(root, level, maxlevel):
             maxlevel[0] = level
         left_view(root.left, level+1, maxlevel)
         left_view(root.right, level+1, maxlevel)
-    return ans
      
      
 lst = [1, 2, 3, 4, 5, 6, 7, 8 , 9, 10]
 n = len(lst)
 root = construct_tree(lst, 0, n)
 ans = []
-view = left_view(root, 1, [0])
-print(*view)
+left_view(root, 1, [0])
+print(*ans)
 
 #OUTPUT: 1 2 4 8
 #------------------------------------------------------------------------------------------------
@@ -86,15 +85,14 @@ def right_view(root, level, maxlevel):
             maxlevel[0] = level
         right_view(root.left, level+1, maxlevel)
         right_view(root.right, level+1, maxlevel)
-    return ans
      
      
 lst = [1, 2, 3, 4, 5, 6, 7, 8 , 9, 10]
 n = len(lst)
 root = construct_tree(lst, 0, n)
 ans = []
-view = right_view(root, 1, [0])
-print(*view)
+right_view(root, 1, [0])
+print(*ans)
 
 #OUTPUT: 1 3 7 10
 #----------------------------------------------------------------------------------------------------------

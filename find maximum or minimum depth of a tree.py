@@ -71,3 +71,4 @@ class Solution:
             depth = max(depth, self.maxDepth(node))
             
         return depth + 1
+    

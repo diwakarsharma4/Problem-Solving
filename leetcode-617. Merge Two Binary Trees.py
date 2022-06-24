@@ -4,7 +4,8 @@
 #problem : You are given two binary trees root1 and root2.
 
 #solution : 
-#we will use leb=vel order traversal in both trees simultaniously.
+#the idea is to traverse in both trees simultaniously and modify tree1.
+#we will use level order traversal in both trees simultaniously.
 #in case of any child does not have left / right child of one tree while other tree node does have respective left / right child.
 #then we will add new node having value 0.
 #so that at the time of addition we can easily add values of both the nodes.

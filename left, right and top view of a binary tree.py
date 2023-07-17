@@ -83,8 +83,8 @@ def right_view(root, level, maxlevel):
         if maxlevel[0]<level:
             ans.append(root.value)
             maxlevel[0] = level
-        right_view(root.left, level+1, maxlevel)
         right_view(root.right, level+1, maxlevel)
+        right_view(root.left, level+1, maxlevel)
      
      
 lst = [1, 2, 3, 4, 5, 6, 7, 8 , 9, 10]
